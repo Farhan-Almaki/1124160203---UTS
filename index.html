@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/iconair.png" type="image/png">
+    <link rel="icon" href="Gambar/iconair.png" type="image/png">
     <title>Perancangan Web</title>
     <style>
         header {
             text-align: center;
         }
-        .container {
+    
+        .gambar {
             display: flex;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        img {
-            height: 200px;
-            width: 200px;
+            height: 150px;
+            width: 150px;
             border-radius: 50%;
             object-fit: cover;
+            margin: 20px auto;
+            display: block;
         }
     </style>
 </head>
@@ -26,33 +25,43 @@
     <header>
         <h1>Web Profile Mahasiswa Global Institute</h1>
     </header>
-    <div class="container">
-        <img src="img/profile.webp" alt="Foto Profile">
-    </div>
+    <img src="Gambar/profile.webp" alt="Foto Profile" class="gambar">
+    <section>
+        <ul>
+            <li>Kampus : <a href="https://global.ac.id" target="_blank">Global Institute</a> </li>
+            <li>Nim : 1124160203</li>
+            <li>Nama : Farhan Al Maki</li>
+            <li>Jurusan : Software Engineering</li>
+            <li>Semester : 2</li>
+            <li>Matakuliah : Perancangan Web</li>
+        </ul>
+        <table border="1" style="width: 100%; margin-top: 20px;">
+            <thead style="background-color: aqua;">
+                <tr>
+                    <th>NO.</th>
+                    <th>TUGAS</th>
+                    <th>LINK CODE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tugas UTS</td>
+                    <td><a href="https://github.com/Farhan-Almaki/1124160203---UTS" target="_blank">1124160203---UTS</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <ul>
-        <li>Kampus : <a href="https://global.ac.id" target="_blank">Global Institute</a> </li>
-        <li>Nim : 1124160203</li>
-        <li>Nama : Farhan Al Maki</li>
-        <li>Jurusan : Software Engineering</li>
-        <li>Semester : 2</li>
-        <li>Matakuliah : Perancangan Web</li>
-    </ul>
-    <table border="1" style="width: 100%; margin-top: 20px;">
-        <thead style="background-color: aqua;">
-            <tr>
-                <th>NO.</th>
-                <th>TUGAS</th>
-                <th>LINK CODE</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Tugas UTS</td>
-                <td><a href="https://github.com/Farhan-Almaki/1124160203---UTS" target="_blank">1124160203---UTS</a></td>
-            </tr>
-        </tbody>
-    </table>
+    <div>
+    <section>
+        <h3>Link Peta Indonesia</h3>
+        <img src="Gambar/PetaIndonesia.jpg" usemap="#image-map">
+        <map name="image-map">
+            <area target="" alt="PulauPapua" title="PulauPapua" href="https://maps.app.goo.gl/CnanBMHzmdft6ydk6" coords="1072,616,1235,392" shape="rect">
+            <area target="" alt="PulauSulawesi" title="PulauSulawesi" href="https://maps.app.goo.gl/wcHk7FGW1zqSaMnV6" coords="831,552,655,327" shape="rect">
+        </map>
+    </section>
+    </div>
 </body>
 </html>
